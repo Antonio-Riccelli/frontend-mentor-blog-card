@@ -1,0 +1,122 @@
+/* CSS Reset as shown by Josh Comeau's  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --clr-primary: #F4D04E;
+  --clr-secondary-950: #111111;
+  --clr-secondary-500: #6B6B6B;
+  --clr-tertiary: #fff;
+}
+
+body {
+  background-color: var(--clr-primary);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--clr-tertiary);
+  box-shadow: 5px 5px 1px 2px black;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.card-img-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.card-img {
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.tag {
+  background-color: var(--clr-primary);
+  display: inline-block;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.author-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.author-img {
+  padding-right: 1rem;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
