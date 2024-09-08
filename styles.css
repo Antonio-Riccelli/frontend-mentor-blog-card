@@ -74,6 +74,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-size: clamp(1.10, 1.12rem, 1.12rem);
 }
 
 h1 {
@@ -150,17 +151,17 @@ a:hover {
 }
 
 .txt-preset-1 {
-  font-size: 24px;
+  font-size: clamp(16px, 24px, 24px);
   font-weight: 800;
 }
 
 .txt-preset-2 {
-  font-size: 16px;
+  font-size: clamp(14px, 16px, 16px);
 }
 
 .txt-preset-3,
 txt-preset-3-bold {
-  font-size: 14px;
+  font-size: clamp(12px, 14px, 14px);
 }
 
 .txt-preset-3 {
