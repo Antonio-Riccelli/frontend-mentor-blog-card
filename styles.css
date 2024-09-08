@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  src: local(''),
+    url('/assets//fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-style: italic;
+  src: local(''),
+    url('/assets//fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
 /* CSS Reset as shown by Josh Comeau's  */
 
 *,
@@ -13,6 +27,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-primary);
+  font-family: 'Figtree', sans-serif;
 }
 
 img,
@@ -47,14 +63,10 @@ h6 {
 }
 
 :root {
-  --clr-primary: #F4D04E;
+  --clr-primary: hsl(47, 88%, 63%);
   --clr-secondary-950: #111111;
   --clr-secondary-500: #6B6B6B;
-  --clr-tertiary: #fff;
-}
-
-body {
-  background-color: var(--clr-primary);
+  --clr-tertiary: hsl(0, 0%, 100%);
 }
 
 main {
@@ -64,13 +76,23 @@ main {
   min-height: 100vh;
 }
 
+h1 {
+  padding: 8px 0;
+}
+
+h1:hover,
+a:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
+}
+
 .card {
   background-color: var(--clr-tertiary);
-  box-shadow: 5px 5px 1px 2px black;
+  box-shadow: 7px 7px 1px 2px black;
   width: 100%;
-  max-width: 20rem;
+  max-width: 22rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.3rem;
   border-radius: 1.5rem;
 }
 
@@ -84,31 +106,29 @@ main {
   border-radius: 0.5rem;
 }
 
+.description {
+  padding: 4px 0;
+}
+
 .tag {
   background-color: var(--clr-primary);
   display: inline-block;
   padding: 0.1rem 0.8rem;
   border-radius: 0.5rem;
   margin: 1.5rem 0 0.5rem 0;
-  font-weight: bold;
 }
 
 .author-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem 0;
+  padding: 12px 0 8px 0;
 }
 
 .author-img {
   padding-right: 1rem;
+  width: 3rem;
 }
-
-.author-name {
-  font-weight: bold;
-}
-
-
 
 .attribution {
   font-size: 11px;
@@ -119,4 +139,34 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.txt-preset-1,
+.txt-preset-2,
+.txt-preset-3,
+.txt-preset-3-bold {
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.txt-preset-1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.txt-preset-2 {
+  font-size: 16px;
+}
+
+.txt-preset-3,
+txt-preset-3-bold {
+  font-size: 14px;
+}
+
+.txt-preset-3 {
+  color: var(--clr-secondary-500);
+}
+
+.txt-preset-3-bold {
+  font-weight: bold;
 }
